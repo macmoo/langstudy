@@ -13,12 +13,15 @@ ny와 AnyObject는 될 수 있으면 사용하지 않는 편이 좋습니다. �
 typealias MyInt = Int
 typealias YourInt = Int
 typealias MyDouble = Double
-let age: MyInt = 100 var year: YourInt = 2080 // MyInt는 Int의 또 다른 이름입니다.
+let age: MyInt = 100 
+var year: YourInt = 2080
+// MyInt는 Int의 또 다른 이름입니다.
 // YourInt도 Int의 또 다른 이름입니다.
 // MyInt도, YourInt도 Int이기 때문에 같은 타입으로 취급합니다.
 year = age
 90 1부 - 스위프트 기초
-let month: Int = 7 let percentage: MyDouble = 99.9 // 물론 기존의 Int도 사용 가능합니다.
+let month: Int = 7
+let percentage: MyDouble = 99.9 // 물론 기존의 Int도 사용 가능합니다.
 // Int 외에 다른 자료형도 모두 별칭 사용이 가능합니다.
 ```
 
