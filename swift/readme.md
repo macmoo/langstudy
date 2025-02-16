@@ -72,15 +72,13 @@ let percentage: MyDouble = 99.9 // 물론 기존의 Int도 사용 가능합니�
 // ----------------
 // String, Int, Double 타입을 갖는 튜플
 var person: (String, Int, Double) = ("yagom", 100, 182.5)
-// var person: (name: String, age: Int, height: Double) = ("yagom", 100, 182.5)
-
-// 인덱스를 통해서 값을 빼 올 수 있습니다.
 print("이름: \(person.0), 나이: \(person.1), 신장: \(person.2)")
-// print("이름: \(person.name), 나이: \(person.age), 신장: \(person.height)")
 
 person.1 = 99 person.2 = 178.5
-// 인덱스를 통해 값을 할당할 수 있습니다.
 print("이름: \(person.0), 나이: \(person.1), 신장: \(person.2)")
+
+var person: (name: String, age: Int, height: Double) = ("yagom", 100, 182.5)
+print("이름: \(person.name), 나이: \(person.age), 신장: \(person.height)")
 ```
 
 ```swift
@@ -92,14 +90,13 @@ var names: Array<String> = ["yagom", "chulsoo", "younghee", "yagom"]
 // 위 선언과 정확히 동일한 표현입니다. [String]은 Array<String>의 축약 표현입니다.
 var names: [String]   = ["yagom", "chulsoo", "younghee", "yagom"]
 var emptyArray: [Any] = [Any]() // Any 데이터를 요소로 갖는 빈 배열을 생성합니다.
-var emptyArray:ƒ [Any] = Array<Any>() // 위 선언과 정확히 같은 동작을 하는 코드입니다.
+var emptyArray: [Any] = Array<Any>() // 위 선언과 정확히 같은 동작을 하는 코드입니다.
 // 배열의 타입을 정확히 명시해줬다면 []만으로도 빈 배열을 생성할 수 있습니다.
 var emptyArray: [Any] = []
 print(emptyArray.isEmpty) // true
 print(names.count) // 4
 ```
 
-```swift  ```
 
 ```swift  ```
 
@@ -110,13 +107,4 @@ print(names.count) // 4
 ```swift  ```
 
 ```swift  ```
-
 ```swift  ```
-
-```swift  ```
-
-
-
-
-
-
