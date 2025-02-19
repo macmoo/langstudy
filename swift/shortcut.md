@@ -3,6 +3,9 @@
     Command(⌘) + Shift(⇧) + K : 프로젝트 클린
     Command(⌘) + B : 프로젝트 빌드
     Command(⌘) + R : 프로젝트 실행
+    Control(⌃) + Shift(⇧) + ^ : 터미널 *
+    Command(⌘) + / : 해당라인 주석 걸기 ( 다중 라인도 가능 )
+
     Command(⌘) + I : 프로젝트 프로파일링 빌드
     Command(⌘) + T : 새로운 탭 열기
     Command(⌘) + [ : 해당 코드 왼쪽으로 indent 한 탭(4 spaces or 2 spaces) 이동
@@ -18,11 +21,10 @@
     Command(⌘) + Option(⌥) + ,(Comma) : 현재창 이중 분할
     Command(⌘) + Option(⌥) + n : 새로운 폴더 생성
     Command(⌘) + Enter : 현재창을 단일창으로 변경
-    Command(⌘) + / : 해당라인 주석 걸기 ( 다중 라인도 가능 )
     Control(⌃) + Command(⌘) + 좌우 화살표 : 이전/이후 페이지 이동
     Control(⌃) + I : 선택된 구간 정해진 설정으로 들여쓰기(Indentation)
     Control(⌃) + Shift(⇧) + Click: 멀티 커서
-    Command(⌘) + D : 줄 복사
+    Command(⌘) + D : 줄 복사    
 
 ## Xcode 네비게이터(Navigator) 영역
 
