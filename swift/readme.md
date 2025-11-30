@@ -28,7 +28,7 @@ let 변수명 : 형
 
 ```swift
 let time = 9.95
-let result = "시간은 (/time)초."
+let result = "시간은 \(time)초."
 ```
 
 ```swift

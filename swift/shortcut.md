@@ -29,6 +29,9 @@
     Command(⌘) + Option(⌥) + 0         : 우측 인스펙터(Inspector pane)를 토글
     Command(⌘) + 0                     : 좌측 네비게이터(Navigator)를 토글
     Command(⌘) + Option(⌥) + Delete    : 유틸리티 인스펙터(Utility area)를 토글
+   
+    Command(⌘) + Shift(⇧) + L : Library표시
+    Command(⌘) + Shift(⇧) + Option(⌥) + L : Library표시 (라이브러리 안닫음)
 
 
 ## Xcode 네비게이터(Navigator) 영역
@@ -54,7 +57,7 @@
 
     Command(⌘) + \             : 브레이크 포인트 걸기
     Command(⌘) + Y             : 브레이크 포인트 비활성화 / 활성화
-    Command(⌘) + Shift(⇧) + Y  : 하단 디버그 세션 창 열기 / 닫기
+    Command(⌘) + + Y  : 하단 디버그 세션 창 열기 / 닫기
     Command(⌘) + U             : Unit Test 실행
     F6                         : 다음 라인 ( Step Over )
     F7                         : 현재 라인 내부 진입 ( Step Into )
@@ -91,5 +94,9 @@
     Command(⌘) + Q            : 선택된 프로그램 종료
     Command(⌘) + H            : 현재 창 숨기기
     Control(⌃) + Space        : 언어 변환 *
+
+    Command(⌘) + Option(⌥) + [ / ] : line up / down
+
+
 
  
