@@ -17,14 +17,62 @@ ny와 AnyObject는 될 수 있으면 사용하지 않는 편이 좋습니다. �
 ```
 
 ```swift
+var 변수명 = 값
+var 변수명 : 형
+var 변수명 : 형 = 초기ㅣ값
 
+// 상수
+let 변수명 = 초기값
+let 변수명 : 형
+```
+
+```swift
+let time = 9.95
+let result = "시간은 (/time)초."
 ```
 
 ```swift
 
 ```
-
 ```swift
+
+```
+```swift
+
+```
+```swift
+
+```
+```swift
+
+```
+```swift
+
+```
+```swift
+
+```
+```swift
+
+```
+```swift
+
+```
+```swift
+
+```
+```swift
+
+```
+```swift
+defaults write -g KeyRepeat -int 1 
+defaults write -g InitialKeyRepeat -int 10
+
+defaults write -g KeyRepeat -int 6
+defaults write -g InitialKeyRepeat -int 68
+
+KeyRepeat = 6
+InitialKeyRepeat = 68
 
 ```
 
