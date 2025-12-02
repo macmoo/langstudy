@@ -96,7 +96,7 @@
     Control(⌃) + Space        : 언어 변환 *
 
     Command(⌘) + Option(⌥) + [ / ] : line up / down
-
+    Control(⌃) + Shift(⇧) + I      : source reindent
 
 
  
