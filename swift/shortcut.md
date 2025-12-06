@@ -98,5 +98,11 @@
     Command(⌘) + Option(⌥) + [ / ] : line up / down
     Control(⌃) + Shift(⇧) + I      : source reindent
 
+    Command(⌘) + + / -        : 확대/축소
+    
 
- 
+## trouble
+keychain
+https://stackoverflow.com/questions/46774005
+Enter your Mac Login Password and Choose "Always Allow"
+One or More dialogs opened and positioned in the same dialog, repeat step 1 until all dialogs closed.
