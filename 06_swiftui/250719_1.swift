@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  test_250719
-//
-//  Created by kaku on 2025/07/19.
-//
-
 import SwiftUI
 
 // View프로토콜을 구현

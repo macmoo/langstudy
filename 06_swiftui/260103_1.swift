@@ -5,11 +5,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        // List(배열)로 배열에서 요소를 순서대로 추출.
-        // List-in식을 사용할 수 있는 것은 photoArray의 요소인 PhotoData가
-        // Identifiable프로토콜을 채용한 구조체일것.
-        List(photoArray) { item in
-            RowView(photo: item)
+        NavigationView {
+            List(photoArray) { item in
+                NavigationLink(destination: PhotoDetailView(photo: item)) {
+                    RowView(photo: item)
+                }
+            }
+            .navigationTitle(Text("사진리스트"))
         }
     }
 }
@@ -23,9 +25,7 @@ struct ContentView: View {
 // ----------------------------------------
 import Foundation
 
-// 사진데이터의 구조체
 struct PhotoData: Identifiable {
-    // Identifiable프로토콜에서는 반드시 id가 필요하다(이용하지 않아도 필요).
     var id = UUID()
     var imageName: String
     var title: String
@@ -73,6 +73,30 @@ struct RowView_Previews: PreviewProvider {
     static var previews: some View {
         RowView(photo: photoArray[0])
             .previewLayout(.sizeThatFits)
+    }
+}
+// ----------------------------------------
+// PhotoDetailView.swift
+// ----------------------------------------
+import SwiftUI
+
+struct PhotoDetailView: View {
+    var photo: PhotoData
+    var body: some View {
+        VStack {
+            Image(photo.imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            Text(photo.title)
+            Spacer()
+        }
+        .padding()
+    }
+}
+
+struct PhotoDetail_Preview: PreviewProvider {
+    static var previews: some View {
+        PhotoDetailView(photo: photoArray[0])
     }
 }
 // ----------------------------------------

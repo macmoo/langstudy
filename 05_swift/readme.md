@@ -31,6 +31,15 @@ let time = 9.95
 let result = "시간은 \(time)초."
 ```
 
+### access권
+| access권      | 설명 |
+| -            | -|
+| open         | 모듈외에서도 자유롭게 액세스가능 |
+| public       | 모듈외에서도 액세스가능하나, 계승이나 override는 불가능 |
+| internal     | 동일 모듈안이라면 다른 파일에서도 액세스가능(디폴트) |
+| fileprivate  | 동일 파일안에서만 액세스가능 |
+| private      | 정의된 스코프안에서만 액세스가능 |
+
 ```swift
 
 ```
