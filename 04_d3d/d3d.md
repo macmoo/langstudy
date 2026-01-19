@@ -9,3 +9,9 @@
 - VC++ 디렉터리 > 일반 > 포함 디렉터리 > 편집 > DirectX SDK\Include
 - VC++ 디렉터리 > 일반 > 라이브러리 디렉터리 > 편집 > Microsoft DirectX SDK (June 2010) > Lib > x86
 - 링커 > 입력 > 추가 종속성 > d3d9.lib;d3dx9.lib;winmm.lib
+
+- 깜빡임현상(flickering):전면버퍼에서 화면을 지우고 다시 그릴 경우 발생 
+  => 대책이 페이지플리핑 방식이며 후면버퍼의 내용을 전면버퍼로 전송(flip)하는 명령이 Present()
+  
+
+
