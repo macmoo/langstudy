@@ -40,6 +40,8 @@ let result = "시간은 \(time)초."
 | fileprivate  | 동일 파일안에서만 액세스가능 |
 | private      | 정의된 스코프안에서만 액세스가능 |
 
+구조체명의 첫글자는 대문자
+
 ```swift
 
 ```
