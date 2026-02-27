@@ -19,7 +19,11 @@ struct ContentView: View{
     var body: some View{
         VStack{
             Button("Tap"){
-                msg = "감사감사"
+                if msg == "Thank you" {
+                    msg = "감사감사"
+                } else {
+                    msg = "Thank you"
+                }
             }
             .font(.headline)
             .foregroundColor(.white)
