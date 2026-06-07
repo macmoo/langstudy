@@ -2,6 +2,11 @@
 using System.Xml.Linq;
 
 // ------------------------------------------
+// 조건에 맞는 요소만 취득
+// 
+// Where메소드를 사용하면, 람다식에 지정한 조건에 따라
+// 시퀀스(IEnumerable<T>형 데이터)를 필터링할 수 있다.
+// 
 // public static IEnumerable<TSource> Where<TSource>(
 //     this IEnumerable<TSource> source,    // 조건
 //     Func<TSource, bool> predicate);
