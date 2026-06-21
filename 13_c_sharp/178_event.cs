@@ -12,10 +12,6 @@ using System.Data.SqlClient;
 // 1. event 키워드를 사용한 이벤트
 // 2. 이벤트를 발생할 On으로 시작하는 private메소드
 // 3. 특정 사상이 발생했을 때, 위의 2개를 호출할 코드.
-// 
-// 
-// 
-// 
 
 // 이벤트 이용
 var obj = new EventSample();
@@ -48,7 +44,7 @@ class EventSample
     private int _total = 0;
     public void Add(int n)
     {
-        _total += 5;
+        _total += n;
         if (_total % 5 == 0)
         {
             // 5로 나누어 떨어지면 이벤트 발생.
@@ -64,9 +60,5 @@ class SampleEventArgs : EventArgs
     public int Total { get; set; }
 }
 
-
 // Total = 5
-// Total = 10
-// Total = 15
 // Total = 20
-// Total = 25
