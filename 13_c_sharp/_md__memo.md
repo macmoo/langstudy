@@ -80,22 +80,90 @@ public static IEnumerable<int> GetNumbersUntil(int max)
 | Func<T1, T2, T3, TResult> | TResult | 3개의 인수로 TResult을 반환함.|
 | Predicate<TResult> | bool | T형의 인수로 bool을 반환함.|
 
-// 
+---
 
 ```cs
-
-
+- Top Level Statement
+  정형구의 대부분을 생략하고 using문, 처리문만을 사용할 수 있다.
+- using static 완전수식형명;
+  그 형의 정적멤버에 형명르 지정하지 않고 액세스가 가능하다.
+  using static System.Console;
+- nameof(식별명)
+  변수, 형, 멤버의 이름이 문자열로 생성됨.`
+  Console.WriteLine(nameof(System.DateTime)); // DateTime
+- default
+  오브젝트의 디폴트 값을 지정.
+  형명 변수 = default;
+  DateTime dt = default;
 ```
 
 ---
 
 ```cs
-
+- new식
+  인스턴스생성시의 형을 생략가능.
+  작성할 오브젝트의 형을 이미 알고 있을 때만 사용가능.
+  1. private List<Todo> _list = new ();
+  2.
+    public MyRetryOption Create()
+    {
+        // MyRetryOptionインスタンスが生成されるれる
+        return new()
+        {
+            Count = 3,
+            Interval = 100,
+        };
+    }
 ```
 
 ---
 
 ```cs
+- out변수
+  파라메터를 메소드에 넘길때, 변수의 선언과 동시에 할 수 있다.
+// TryParse()를 호출하기 전에 변수를 선언할 필요가 없다.
+if (Double.TryParse("3.14", out var value))
+{
+    Console.WriteLine(value);
+}
+```
+
+---
+
+```cs
+- 이름있는 인수
+  정의된 순서에 상관없이 인수를 넘길수 있다.
+
+// 名前付き引数を利用しメソッドを呼び出す例
+ExampleMethod(5, optionalInt: 20);
+ExampleMethod(optionalStr: "hello", required: 10);
+
+// メソッドの定義例
+static void ExampleMethod(
+        int     required,
+        string  optionalStr = "default string",
+        int     optionalInt = 10)
+{
+    Console.Write($"required={required}, ");
+    Console.Write($"optionalStr={optionalStr}, ");
+    Console.WriteLine($"optionalInt={optionalInt}");
+}
+// required=5, optionalStr=default string, optionalInt=20
+// required=10, optionalStr=hello, optionalInt=10
+```
+
+---
+
+```cs
+- switch식
+  switch식 그 자체가 값을 갖게 된다.
+식 switch
+{
+    값1 => 식1,
+    값2 => 식2,
+    ...
+    _   => 식x,
+}
 
 ```
 
