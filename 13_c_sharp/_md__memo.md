@@ -164,13 +164,29 @@ static void ExampleMethod(
     ...
     _   => 식x,
 }
-
 ```
 
 ---
 
 ```cs
+Func<int, string>은 특별한 문법이 아니라, .NET에서 미리 정의해 놓은 델리게이트입니다.
+public delegate TResult Func<T, TResult>(T arg);
+첫 번째 제네릭 타입 T → 매개변수 타입
+마지막 제네릭 타입 TResult → 반환 타입
+Func<int, string>
+T = int
+TResult = string
 
+Func를 볼 때는 맨 마지막 타입만 반환형이라고 기억하면 됩니다.
+
+Func<int, bool, string, double>
+int → 첫 번째 입력
+bool → 두 번째 입력
+string → 세 번째 입력
+double → 반환값
+
+Action = 모두 입력(매개변수), 반환값 없음
+Func = 마지막만 결과(Return), 앞은 모두 입력
 ```
 
 ---
