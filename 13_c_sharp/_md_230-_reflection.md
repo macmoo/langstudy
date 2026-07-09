@@ -10,7 +10,7 @@
 | 235 | Type.GetMethods()        | 메소드 리스트 취득            |              |
 | 236 | Type.GetConstructor()    | ConstructorInfo 인스턴스취득  |              |
 | 236 | ConstructorInfo.Invoke() | 생성자 호출(생성자 동적 호출) |              |
-| 23  |                          |                               |              |
+| 237 | Type.GetConstructors()   | Typed의 생성자 리스트 취득    |              |
 | 23  |                          |                               |              |
 | 23  |                          |                               |              |
 | 23  |                          |                               |              |
